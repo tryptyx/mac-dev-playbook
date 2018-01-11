@@ -7,6 +7,7 @@
 		"Dockerfile Syntax Highlighting",
 		"Drupal Snippets",
 		"FileDiffs",
+		"Git",
 		"GitHub Flavored Markdown Preview",
 		"Jinja2",
 		"MarkAndMove",
@@ -15,9 +16,11 @@
 		"Puppet",
 		"RegReplace",
 		"Sass",
+		"SublimeEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"TrailingSpaces",
+		"Trimmer",
 		"Xdebug Client"
 	]
 }

@@ -6,43 +6,117 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/tryptyx/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/code/dotfiles
 dotfiles_files:
+  - .aliases
   - .bash_profile
+  - .bash_profile
+  - .bash_prompt
+  - .bashrc
+  - .curlrc
+  - .editorconfig
+  - .exports
+  - .functions
+  - .gdbinit
+  - .gitattributes
   - .gitignore
+  - .gvimrc
+  - .hgignore
+  - .hushlogin
   - .inputrc
-  - .osx
+  - .inputrc
+  - .macos
+  - .screenrc
+  - .tmux.conf
+  - .vim
   - .vimrc
+  - .vimrc
+  - .wgetrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
+  - aircrack-ng
+  - autoconf 
+  - automake
+  - awscli        
   - bash-completion
   - chromedriver
+  - composer       
+  - coreutils
+  - coreutils
+  - ctags
+  - dns2tcp
+  - docker-machine         
+  - docker-machine-driver-xhyve 
   - doxygen
+  - fcrackzip
+  - ffmpeg
+  - findutils
+  - freetype           
+  - gdbm
   - gettext
   - gifsicle
   - git
   - go
+  - gnupg
   - gpg
-  - hub
   - httpie
+  - hub
+  - icu4c
   - iperf
+  - jpeg
+  - jq
+  - kubernetes-cli         
+  - kubernetes-helm       
+  - lame
+  - lftp
+  - libev
   - libevent
-  - sqlite
+  - libgpg-error   
+  - libidn
+  - libksba
+  - libpng
+  - libtool
+  - libxml2
+  - libyaml
+  - maven
   - mcrypt
+  - moreutils
+  - mtr
+  - mysql
+  - netpbm
+  - nmap
   - nmap
   - node
   - nvm
-  - ssh-copy-id
-  - cowsay
-  - readline
+  - oniguruma           
   - openssl
+  - php70
+  - pkg-config       
   - pv
+  - python
+  - readline
+  - reattach-to-user-namespace
+  - sqlite
+  - ssh-copy-id
+  - tcpflow
+  - tcpreplay
+  - tcptrace
+  - the_silver_searcher
+  - tmux
+  - tree
+  - ucspi-tcp
+  - unixodbc
+  - vim
+  - watch
   - wget
   - wrk
+  - x264
+  - xhyve
+  - xvid
+  - zsh
 
 homebrew_taps:
   - homebrew/core
@@ -51,37 +125,49 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - angry-ip-scanner
+  - atom
+  - audacity
+  - aws-vault
+  - chrome-remote-desktop-host
+  - cord
+  - cyberduck
+  - disk-inventory-x
   - docker
+  - docker-toolbox
   - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
   - firefox
+  - gimp
   - google-chrome
-  - handbrake
+  - iterm2
   - licecap
-  - limechat
-  - macvim
+  - minikube
+  - owasp-zap
+  - sequel-pro
   - sequel-pro
   - skitch
+  - skype
   - slack
+  - sourcetree
   - sublime-text
-  - transmit
   - vagrant
   - virtualbox
+  - zenmap
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+osx_script: "~/.macos --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
 # installed, eg. through homebrew.
 composer_packages: []
-  # - name: drush
-  #   state: present # present/absent, default: present
-  #   version: "^8.1" # default: N/A
+  - name: drush
+    state: present # present/absent, default: present
+    version: "^8.1" # default: N/A
 gem_packages: []
   # - name: bundler
   #   state: present # present/absent/latest, default: present
