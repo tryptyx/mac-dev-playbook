@@ -139,6 +139,7 @@ homebrew_cask_apps:
   - gimp
   - google-chrome
   - iterm2
+  - java
   - licecap
   - owasp-zap
   - sequel-pro
