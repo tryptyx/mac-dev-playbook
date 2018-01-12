@@ -13,9 +13,11 @@
 
   roles:
     - role: geerlingguy.homebrew
+      tags: ['homebrew']
     - role: geerlingguy.dotfiles
+      tags: ['dotfiles']
     - role: geerlingguy.mas
-
+      tags: ['mas']
   tasks:
     - include: tasks/ansible-setup.yml
     - include: tasks/sudoers.yml
