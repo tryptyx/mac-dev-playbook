@@ -45,7 +45,6 @@ homebrew_installed_packages:
   - chromedriver
   - composer       
   - coreutils
-  - coreutils
   - ctags
   - dns2tcp
   - docker-machine         
@@ -127,7 +126,6 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - angry-ip-scanner
   - atom
-  - audacity
   - aws-vault
   - chrome-remote-desktop-host
   - cord
@@ -141,14 +139,13 @@ homebrew_cask_apps:
   - google-chrome
   - iterm2
   - licecap
-  - minikube
   - owasp-zap
-  - sequel-pro
   - sequel-pro
   - skitch
   - skype
   - slack
   - sourcetree
+  - spectacle
   - sublime-text
   - vagrant
   - virtualbox
