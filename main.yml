@@ -9,11 +9,15 @@
     - include_vars: "{{ item }}"
       with_fileglob:
         - ../config.yml
+      tags: ['always']
 
   roles:
     - role: geerlingguy.homebrew
+      tags: ['always']
     - role: geerlingguy.dotfiles
+      tags: ['always']
     - role: geerlingguy.mas
+      tags: ['always']
   tasks:
     - include: tasks/ansible-setup.yml
     - include: tasks/sudoers.yml
