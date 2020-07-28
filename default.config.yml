@@ -120,8 +120,8 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
-  - homebrew/science
+  #- homebrew/php
+ # - homebrew/science
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:

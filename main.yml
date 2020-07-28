@@ -12,10 +12,10 @@
       tags: ['always']
 
   roles:
-    #- role: geerlingguy.homebrew
-    #  tags: ['always']
-    - role: geerlingguy.dotfiles
+    - role: geerlingguy.homebrew
       tags: ['always']
+    #- role: geerlingguy.dotfiles
+    #  tags: ['always']
     # - role: geerlingguy.mas
     #   tags: ['always']
   tasks:
